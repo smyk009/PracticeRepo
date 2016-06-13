@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Page</title>
+
+</head>
+<body>
+
+  <p>User Name</p>
+  <input type="text" id="userNameText"><br/>
+  <p>Password</p>
+  <input type="password" id="passwordText">
+  <div id="passw" style="color:red"></div>
+<button id="myButton">Submit</button>
+<button id="showPass">Show Password</button>
+
+
+
+
+
+
+<script type="text/javascript">
+
+document.getElementById("myButton").onclick = function (){
+  var user = document.getElementById("userNameText").value;
+  var pass = document.getElementById("passwordText").value;
+if(user==pass){
+  alert("Valid User");
+}else {
+  alert("Invalid User")
+}
+}
+document.getElementById("showPass").onclick = function () {
+
+  var pass = document.getElementById("passwordText").value;
+  document.getElementById("passw").innerHTML = pass;
+}
+
+</script>
+</body>
+</html>

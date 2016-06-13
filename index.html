@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Page</title>
+
+</head>
+<body>
+
+  <input type="text" id="myText">
+<button id="myButton"> Click to change text!! </button>
+
+
+
+<p id="text">Some text</p>
+
+
+
+<script type="text/javascript">
+
+
+var myArray = new Array();
+myArray[0]="Pizza"
+myArray[1]="Chocolate"
+myArray[2]="Peanut"
+
+console.log(myArray);
+var myOtherArray = ["Rain","Sunshine"];
+
+console.log(myOtherArray.length);
+
+  document.getElementById("myButton").onclick= function() {
+    var newText = document.getElementById("myText").value;
+    myOtherArray.splice(1,0,newText);
+    console.log(myOtherArray.length);
+
+      document.getElementById("text").innerHTML= myArray[0];
+  }
+
+</script>
+</body>
+</html>

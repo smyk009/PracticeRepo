@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Circle Challenge</title>
+  <style>
+  #circle{
+    width: 300px;
+    height: 300px;
+    border-radius: 1000px;
+    background-color: black;
+  }
+  </style>
+</head>
+<body>
+  <div id="circle"></div>
+  <script>
+  var divId = "circle";
+  document.getElementById(divId).onclick= function() {
+
+    document.getElementById(divId).style.display = "none";
+  }
+  </script>
+</body>
+</html>
