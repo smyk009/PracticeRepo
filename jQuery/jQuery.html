@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+    <title>jQuery</title>
+    <style>
+        #circle{
+            width:150px;
+            height:150px;
+            border-radius: 50%;
+            background-color: red;
+            margin: 10px;
+
+        }
+        .square{
+            width: 150px;
+            height:150px;
+            border: solid;
+            margin: 10px;
+            background-color: green;
+
+        }
+        
+        #text{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+<p id="text">Hi There</p>
+<div id="circle"></div>
+
+<button id="toggle">Toggle text</button>
+
+
+<div class="square"></div>
+<script type="text/javascript">
+        $("#toggle").click(function () {
+            if($("#text").css("display")=="none"){
+            $("#text").fadeIn();
+            }else {
+                $("#text").fadeOut();
+            }
+        })
+
+
+
+
+</script>
+</body>
+</html>
